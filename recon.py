@@ -9,9 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-# =========================
 # Logging Setup
-# =========================
 def setup_logging(output_dir: Path):
     log_file = output_dir / "audit.log"
     logging.basicConfig(
@@ -22,9 +20,8 @@ def setup_logging(output_dir: Path):
     logging.info("Recon tool started")
 
 
-# =========================
+
 # Command Runner
-# =========================
 def run_command(command):
     logging.info(f"Running command: {' '.join(command)}")
     try:
@@ -49,9 +46,7 @@ def run_command(command):
         }
 
 
-# =========================
 # Parse Nmap XML
-# =========================
 def parse_nmap_xml(xml_data):
     hosts = []
     try:
@@ -88,9 +83,7 @@ def parse_nmap_xml(xml_data):
     return hosts
 
 
-# =========================
 # Domain Recon
-# =========================
 def domain_recon(target):
     results = {}
 
@@ -137,9 +130,7 @@ def domain_recon(target):
     return results
 
 
-# =========================
 # IP Recon
-# =========================
 def ip_recon(target):
     results = {}
 
@@ -179,9 +170,7 @@ def ip_recon(target):
     return results
 
 
-# =========================
 # Markdown Report
-# =========================
 def generate_report(mode, target, results):
     report = f"""# Reconnaissance Report
 
@@ -252,9 +241,8 @@ Mode: {mode}
     return report
 
 
-# =========================
+
 # Main
-# =========================
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Integrated Reconnaissance Tool")
     parser.add_argument("target", help="Target domain or IP")
