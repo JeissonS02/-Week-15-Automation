@@ -1,0 +1,17 @@
+2026-05-11 23:36:56,080 INFO Recon tool started
+2026-05-11 23:36:56,080 INFO Target: example.com
+2026-05-11 23:36:56,081 INFO Mode: domain
+2026-05-11 23:36:56,081 INFO Running command: whois example.com
+2026-05-11 23:36:57,099 INFO Command completed with return code 0
+2026-05-11 23:36:57,100 INFO Running command: dig +short example.com A
+2026-05-11 23:36:57,132 INFO Command completed with return code 0
+2026-05-11 23:36:57,132 INFO Running command: dig +short example.com MX
+2026-05-11 23:36:57,185 INFO Command completed with return code 0
+2026-05-11 23:36:57,186 INFO Running command: dig +short example.com NS
+2026-05-11 23:36:57,238 INFO Command completed with return code 0
+2026-05-11 23:36:57,238 INFO Running command: dig +short example.com TXT
+2026-05-11 23:36:57,289 INFO Command completed with return code 0
+2026-05-11 23:36:57,289 INFO Running command: curl -I https://example.com
+2026-05-11 23:36:57,687 INFO Command completed with return code 0
+2026-05-11 23:36:57,687 INFO Results written to recon_example.com_20260511_233656/results.json
+2026-05-11 23:36:57,688 INFO Report written to recon_example.com_20260511_233656/report.md
