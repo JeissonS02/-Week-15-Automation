@@ -10,6 +10,12 @@ The toolkit includes:
 - An integrated reconnaissance tool
 
 ---
+Authors:
+
+- Jeisson David Sanchez Gomez
+- David Salomon Baena Rubio
+
+---
 
 # Python Version
 
